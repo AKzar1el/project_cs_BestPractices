@@ -32,4 +32,27 @@ for (var i = 0; i < 10000; i++)
 // is obvious from the right side of the assignment
 var var1 = "This is clearly a string.";
 var var2 = 27;
+
+// Don't rely on the variable name to
+// specify the type of the variable.
+var inputInt = Console.ReadLine();
+Console.WriteLine(inputInt);
+// In this case it is a string.
+#endregion
+
+#region && and || operators
+Console.Write("Enter a dividend: ");
+int dividend = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter a divisor: ");
+int divisor = Convert.ToInt32(Console.ReadLine());
+
+if ((divisor != 0) && (dividend / divisor > 0))
+{
+    Console.WriteLine("Quotient: {0}", dividend / divisor);
+}
+else
+{
+    Console.WriteLine("Attempted division by 0 ends up here.");
+}
 #endregion
