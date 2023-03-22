@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections;
+using System.Text;
 
 // Use parentheses to make clauses in an
 // expression apparent, as shown in the following code.
@@ -11,6 +12,11 @@ if ((val1 > val2) && (val1 > val3))
 }
 
 #region String data type
+// Declare empty string as the following example.
+string? name = String.Empty;
+Console.WriteLine("test");
+Console.WriteLine(name);
+Console.WriteLine(val1);
 // Use string interpolation to concatenate
 // short strings, as shown in the following code.
 string displayName = $"{val1}, {val2}";
@@ -56,3 +62,24 @@ else
     Console.WriteLine("Attempted division by 0 ends up here.");
 }
 #endregion
+
+#region Operator new
+// Declarations
+var instance1 = new ArrayList();
+// or
+ArrayList instance2 = new();
+// are the same/equivalent to the following:
+ArrayList instance3 = new ArrayList();
+
+// Use object initializers to simplify object
+// creation, as shown in the following example.
+var instance4 = new ExampleClass
+{
+    Name = "Desktop",
+    ID = 37414,
+    Location = "Redmond",
+    Age = 2.3
+};
+#endregion
+
+
